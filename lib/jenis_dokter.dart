@@ -2,95 +2,95 @@ import 'package:flutter/material.dart';
 import 'Employee.dart';
 import 'Services.dart';
 
-class JenisDokterPage extends StatelessWidget {
-  const JenisDokterPage({Key key}) : super(key: key);
+// class JenisDokterPage extends StatelessWidget {
+//   const JenisDokterPage({Key key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Jenis Dokter"),
-      ),
-      body: SingleChildScrollView(
-        child: Container(
-          margin: const EdgeInsets.all(10),
-          alignment: Alignment.center,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              RaisedButton(
-                  child: Container(
-                    child: Text(
-                      "Find",
-                      style: TextStyle(),
-                    ),
-                  ),
-                  onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //       builder: (context) => JenisDokterPage()),
-                    // );
-                  }),
-              RaisedButton(
-                  child: Container(
-                    child: Text(
-                      "Save",
-                      style: TextStyle(),
-                    ),
-                  ),
-                  onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //       builder: (context) => JenisPenyakitPage()),
-                    // );
-                  }),
-              RaisedButton(
-                  child: Container(
-                    child: Text(
-                      "Edit",
-                      style: TextStyle(),
-                    ),
-                  ),
-                  onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => PasienPage()),
-                    // );
-                  }),
-              RaisedButton(
-                  child: Container(
-                    child: Text(
-                      "Delete",
-                      style: TextStyle(),
-                    ),
-                  ),
-                  onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => PasienPage()),
-                    // );
-                  }),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text("Jenis Dokter"),
+//       ),
+//       body: SingleChildScrollView(
+//         child: Container(
+//           margin: const EdgeInsets.all(10),
+//           alignment: Alignment.center,
+//           child: Row(
+//             mainAxisAlignment: MainAxisAlignment.spaceAround,
+//             children: [
+//               RaisedButton(
+//                   child: Container(
+//                     child: Text(
+//                       "Find",
+//                       style: TextStyle(),
+//                     ),
+//                   ),
+//                   onPressed: () {
+//                     // Navigator.push(
+//                     //   context,
+//                     //   MaterialPageRoute(
+//                     //       builder: (context) => JenisDokterPage()),
+//                     // );
+//                   }),
+//               RaisedButton(
+//                   child: Container(
+//                     child: Text(
+//                       "Save",
+//                       style: TextStyle(),
+//                     ),
+//                   ),
+//                   onPressed: () {
+//                     // Navigator.push(
+//                     //   context,
+//                     //   MaterialPageRoute(
+//                     //       builder: (context) => JenisPenyakitPage()),
+//                     // );
+//                   }),
+//               RaisedButton(
+//                   child: Container(
+//                     child: Text(
+//                       "Edit",
+//                       style: TextStyle(),
+//                     ),
+//                   ),
+//                   onPressed: () {
+//                     // Navigator.push(
+//                     //   context,
+//                     //   MaterialPageRoute(builder: (context) => PasienPage()),
+//                     // );
+//                   }),
+//               RaisedButton(
+//                   child: Container(
+//                     child: Text(
+//                       "Delete",
+//                       style: TextStyle(),
+//                     ),
+//                   ),
+//                   onPressed: () {
+//                     // Navigator.push(
+//                     //   context,
+//                     //   MaterialPageRoute(builder: (context) => PasienPage()),
+//                     // );
+//                   }),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
-class DataTableDemo extends StatefulWidget {
+class JenisDokterPage extends StatefulWidget {
   //
-  DataTableDemo() : super();
+  JenisDokterPage() : super();
 
   final String title = 'Flutter Data Table';
 
   @override
-  DataTableDemoState createState() => DataTableDemoState();
+  JenisDokterPageState createState() => JenisDokterPageState();
 }
 
-class DataTableDemoState extends State<DataTableDemo> {
+class JenisDokterPageState extends State<JenisDokterPage> {
   List<Employee> _employees;
   GlobalKey<ScaffoldState> _scaffoldKey;
   // controller for the First Name TextField we are going to create.
